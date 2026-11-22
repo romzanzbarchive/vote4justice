@@ -1,0 +1,22 @@
+:root{--bg:#1a1a1a;--card:#242424;--line:#383838;--tx:#f2f2f2;--mut:#a3a3a3;--gold:#f5b301}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:"Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif;line-height:1.6}
+.wrap{max-width:860px;margin:auto;padding:0 16px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+.bar{display:flex;justify-content:space-between;align-items:center;height:56px}
+.logo{color:var(--tx);text-decoration:none;font-weight:700;font-size:20px}.logo b{color:var(--gold)}
+.tag{color:var(--gold);font-size:13px;border:1px solid var(--gold);border-radius:99px;padding:2px 10px}
+.hero{padding:28px 0 8px}.hero h1{margin:0 0 6px;font-size:26px}.hero p,.mut{color:var(--mut);margin:0}
+.note{background:#2b2616;border:1px solid #5a4a14;border-radius:10px;padding:10px 14px;font-size:14px;margin:14px 0}
+.poll{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:18px 0}
+.poll h2{margin:0 0 4px;font-size:20px}.meta{color:var(--mut);font-size:14px;margin:8px 0 14px}.meta b{color:var(--gold)}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.opt{display:flex;gap:10px;align-items:center;background:#1d1d1d;border:2px solid var(--line);border-radius:12px;padding:10px;cursor:pointer;color:inherit;text-align:left;font:inherit}
+.opt.sel{border-color:var(--gold);background:#2b2616}.opt:disabled{cursor:default;opacity:.85}
+.av{width:46px;height:46px;border-radius:50%;background:var(--gold);color:#111;display:grid;place-items:center;font-weight:700;flex:none;object-fit:cover}
+.opt small{display:block;color:var(--mut);font-size:13px}
+.go{width:100%;margin-top:14px;background:var(--gold);color:#111;border:0;border-radius:10px;padding:12px;font:inherit;font-weight:700;cursor:pointer}.go:disabled{opacity:.5}
+.res{margin-top:14px}.row{margin:10px 0}.row .t{display:flex;justify-content:space-between;font-size:15px}
+.bg{height:10px;background:#333;border-radius:9px;overflow:hidden;margin-top:4px}.fill{height:100%;background:var(--gold);width:0;transition:width .6s}
+.share{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.share a,.share button{background:#333;color:var(--tx);border:0;border-radius:8px;padding:7px 12px;font:inherit;font-size:14px;text-decoration:none;cursor:pointer}
+.lock{color:var(--mut);font-size:14px;border:1px dashed var(--line);border-radius:10px;padding:10px;margin-top:14px;text-align:center}
+footer{border-top:1px solid var(--line);margin-top:30px;padding:20px 0;color:var(--mut);font-size:14px;text-align:center}
